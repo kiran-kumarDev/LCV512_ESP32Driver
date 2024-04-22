@@ -1,8 +1,7 @@
 #ifndef SPI_23LCV512
 #define SPI_23LCV512
 #include <cstdint>
-#define MAX_ADDRESS 65535
-
+#define MAX_ADDRESS 16384
 class LCV512
 {
     private:
@@ -19,6 +18,7 @@ class LCV512
         bool read_sequential(uint16_t address, uint32_t *buffer);
         bool write_sequential(uint16_t address, uint32_t *buffer);
 
+        
 };
 
 #endif
